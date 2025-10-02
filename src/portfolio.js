@@ -23,7 +23,7 @@ const greeting = {
   username: "Asmita Khuspe",
   title: "Hi all, I'm Asmita",
   subTitle: emoji(
-    "I'm Asmita Khuspe, a Platform Engineer at NCS. I build guardrails for the cloud so others can drive fast without crashing. When I'm not wrangling Kubernetes, I'm teaching, speaking, or writing about cloud — usually with analogies that make tech feel less like rocket science. 🚀"
+    "I'm a platform engineer and cloud engineer, building and securing cloud platforms while automating workflows across AWS, GCP, and Azure. I actively share knowledge as a speaker at GDG, AWSUG, and other tech community events across India. I’m also on my journey to becoming an AWS Community Builder and Google Developer Expert, helping others learn, grow, and navigate the world of cloud and platform engineering."
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -32,13 +32,14 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/asmitakhuspe",
-  linkedin: "https://www.linkedin.com/in/asmitakhuspe/",
-  gmail: "asmita.khuspe@example.com",
+  github: "https://github.com/AsmitaKhuspe",
+  linkedin: "https://www.linkedin.com/in/asmita-khuspe",
+  gmail: "asmitakhuspe1612@gmail.com",
   gitlab: "",
   facebook: "",
-  medium: "",
+  medium: "https://medium.com/@asmitakhuspe1612",
   stackoverflow: "",
+  instagram: "https://www.instagram.com/asmitaoncloud9",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -67,7 +68,8 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "kubernetes",
-      fontAwesomeClassname: "fab fa-docker"
+      fontAwesomeClassname: "fab fa-box-open",
+      image: require("./assets/images/kubernetes.png")
     },
     {
       skillName: "docker",
@@ -78,16 +80,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "terraform",
-      fontAwesomeClassname: "fas fa-cloud"
-    },
-    {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "go",
-      fontAwesomeClassname: "fab fa-golang"
     },
     {
       skillName: "git",
@@ -106,12 +100,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-sync"
     },
     {
-      skillName: "helm",
-      fontAwesomeClassname: "fas fa-cog"
-    },
-    {
-      skillName: "prometheus",
-      fontAwesomeClassname: "fas fa-chart-bar"
+      skillName: "google cloud",
+      fontAwesomeClassname: "fab fa-google"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -123,23 +113,24 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "D.Y. Patil ACS College, Pune",
+      // logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "Bachelor of Computer Science (BCS)",
+      duration: "2023",
+     
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "D.Y. Patil Junior College, Pune",
+      // logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "Higher Secondary Certificate (HSC)",
+      duration: "2020",
+    },
+    {
+      schoolName: "J.B. Ludhani High School, Mumbai",
+      // logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "Secondary School Certificate (SSC)",
+      duration: "2018",
+     
     }
   ]
 };
@@ -171,29 +162,36 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: "Platform Engineer",
+      company: "NCS",
+      companylogo: require("./assets/images/ncs-logo.avif"),
+      date: "Oct 2025 – Present",
+      desc: "Building guardrails for the cloud so others can drive fast without crashing. Working on platform engineering solutions and cloud infrastructure.",
+      // descBullets: [
+      //   "Platform engineering and cloud infrastructure",
+      //   "Building scalable cloud solutions"
+      // ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Cloud Engineer",
+      company: "LTIMindtree",
+      companylogo: require("./assets/images/lti-mindtree.png"),
+      date: "Feb 2024 – Oct 2025",
+      desc: "Worked on cloud engineering projects, focusing on cloud infrastructure and solutions."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Information Technology Engineer",
+      company: "LTIMindtree",
+      companylogo: require("./assets/images/lti-mindtree.png"),
+      date: "Nov 2023 – Feb 2024",
+      desc: "Information Technology Engineer role focusing on IT solutions and engineering."
+    },
+    {
+      role: "Associate Trainee",
+      company: "LTIMindtree",
+      companylogo: require("./assets/images/lti-mindtree.png"),
+      date: "Aug 2023 – Nov 2023",
+      desc: "Started career as Associate Trainee, learning and developing skills in information technology."
     }
   ]
 };
@@ -252,7 +250,7 @@ const achievementSection = {
       title: "Significant Achiever Award - XDR Migration",
       subtitle:
         "Recognized for successful XDR Migration project at LTIMindtree, demonstrating excellence in platform engineering and cloud migration.",
-      image: require("./assets/images/codeInLogo.webp"),
+      // image: require("./assets/images/codeInLogo.webp"),
       imageAlt: "LTIMindtree Award Logo",
       footerLink: [
         {
@@ -265,7 +263,7 @@ const achievementSection = {
       title: "Significant Achiever Award - Store Reconciliation",
       subtitle:
         "Awarded for driving the Store Reconciliation project at LTIMindtree, showcasing leadership and technical excellence in platform solutions.",
-      image: require("./assets/images/codeInLogo.webp"),
+      // image: require("./assets/images/codeInLogo.webp"),
       imageAlt: "LTIMindtree Award Logo",
       footerLink: [
         {
@@ -278,7 +276,7 @@ const achievementSection = {
       title: "AWS Certified Solutions Architect – Associate",
       subtitle:
         "Amazon Web Services certification demonstrating expertise in designing and deploying scalable, highly available systems on AWS.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      // image: require("./assets/images/googleAssistantLogo.webp"),
       imageAlt: "AWS Certification Logo",
       footerLink: [
         {
@@ -291,7 +289,7 @@ const achievementSection = {
       title: "Google Cloud Associate Cloud Engineer",
       subtitle:
         "Google Cloud certification validating skills in deploying applications, monitoring operations, and managing enterprise solutions on Google Cloud Platform.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      // image: require("./assets/images/googleAssistantLogo.webp"),
       imageAlt: "Google Cloud Certification Logo",
       footerLink: [
         {
@@ -304,7 +302,7 @@ const achievementSection = {
       title: "Road to GDE (Google Developer Expert) Path",
       subtitle:
         "Completed the comprehensive Road to GDE program, strengthening expertise and community contributions in cloud technologies.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      // image: require("./assets/images/googleAssistantLogo.webp"),
       imageAlt: "Google Developer Expert Logo",
       footerLink: [
         {
@@ -344,7 +342,7 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "SPEAKER EXPERIENCE",
+  title: "Speaker Experiences",
   subtitle: emoji(
     "Sharing knowledge and expertise in cloud technologies, AI, and platform engineering across various conferences and meetups 🎤"
   ),
@@ -355,21 +353,21 @@ const talkSection = {
       subtitle: "DY Patil ACS College Pune and Zeal College Pune 2025",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/codeInLogo.webp")
+      image: require("./assets/images/linkedin-optimization.jpg")
     },
     {
       title: "AI-Driven DevSecOps: Automating Security in Cloud-Native",
       subtitle: "AI Developers Conference India 2025",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/googleAssistantLogo.webp")
+      image: require("./assets/images/ai-devcon-1.jpg")
     },
     {
       title: "Hackathon – Speaker & Judge",
       subtitle: "Sanjay Ghodawat University 2025",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/pwaLogo.webp")
+      image: require("./assets/images/sgu-hackathon.jpg")
     },
     {
       title:
@@ -377,21 +375,21 @@ const talkSection = {
       subtitle: "CNCG Pune Google Office 2025",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/codeInLogo.webp")
+      image: require("./assets/images/cncg-pune.jpg")
     },
     {
       title: "How Agentic AI Becomes Your Smartest Cloud Teammate",
       subtitle: "Google Cloud Community Day Nagpur 2025",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/googleAssistantLogo.webp")
+      image: require("./assets/images/ccd-nagpur.jpg")
     },
     {
       title: "MCP (Model Context Protocol) – Hosted Session",
       subtitle: "API Community Meetup 2025",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/pwaLogo.webp")
+      image: require("./assets/images/api-community.jpg")
     },
     {
       title:
@@ -399,14 +397,49 @@ const talkSection = {
       subtitle: "AWS UG Pune AWS Community Day 2025",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/codeInLogo.webp")
+      image: require("./assets/images/aws-pune.jpg")
     },
     {
       title: "AWS Security: What Has Changed, What Hasn't, and What Comes Next",
       subtitle: "AWS UG Vadodara AWS Community Day 2025",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/googleAssistantLogo.webp")
+      image: require("./assets/images/aws-vadodra.jpg")
+    },
+    {
+      title: "API Conference India 2025",
+      subtitle: "API Conf Host",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/api-conf.jpg")
+    },
+    {
+      title: "AWS Summit Mumbai 2025",
+      subtitle: "",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/aws-summit.jpg")
+    },
+    {
+      title: "AWS Meetup",
+      subtitle: "Meetup at Amazon Pune",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/aws-meetup.jpg")
+    },
+    {
+      title: "FlutterFlow Event",
+      subtitle: "Host",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/flutterflow.jpg")
+    },
+    {
+      title: "Google Community Mixer",
+      subtitle: "",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/community-mixer.jpg")
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -415,7 +448,7 @@ const talkSection = {
 // Podcast Section
 
 const podcastSection = {
-  title: emoji("Podcast 🎙️"),
+  title: emoji("Podcast"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
@@ -435,9 +468,9 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1-000-000-0000",
-  email_address: "asmita.khuspe@example.com"
+    "Let's build something amazing together! 🚀",
+  number: "+91 7888002762",
+  email_address: "asmitakhuspe1612@gmail.com"
 };
 
 // Twitter Section
@@ -460,9 +493,9 @@ export {
   workExperiences,
   openSource,
   bigProjects,
-  achievementSection,
   blogSection,
   talkSection,
+  achievementSection,
   podcastSection,
   contactInfo,
   twitterDetails,
